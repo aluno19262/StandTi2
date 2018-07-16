@@ -8,10 +8,10 @@ namespace Stand.Models
 {
     public class Imagens
     {
-        public Imagens()
-        {
-            Viaturas = new HashSet<Viaturas>();
-        }
+        //public Imagens()
+        //{
+        //    Viaturas = new HashSet<Viaturas>();
+        //}
         [Key]
         public int ID { get; set; }
 
@@ -23,7 +23,13 @@ namespace Stand.Models
 
         public string NumeroSeq { get; set; }
 
-        public virtual ICollection<Viaturas> Viaturas { get; set; }
+        //public virtual ICollection<Viaturas> Viaturas { get; set; }
+
+
+        public virtual Viaturas Viatura { get; set; }
+
+
+
 
     }
 }

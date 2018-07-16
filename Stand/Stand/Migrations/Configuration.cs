@@ -34,11 +34,11 @@ namespace Stand.Migrations
             //           //*********************************************************************
             //           // adiciona Imagens
             var imagens = new List<Imagens> {
-                          new Imagens {ID=1,Fotografia="Mazda_Rx7_1",Marca="Mazda",Modelo="Rx7",NumeroSeq="1"},
-                          new Imagens {ID=2,Fotografia="Mazda_Rx7_2",Marca="Mazda",Modelo="Rx7",NumeroSeq="2"},
-                          new Imagens {ID=3,Fotografia="Bmw_335i_1",Marca="BMW",Modelo="335i",NumeroSeq="1"},
-                          new Imagens {ID=4,Fotografia="Bmw_335i_2",Marca="BMW",Modelo="335i",NumeroSeq="2"},
-                          new Imagens {ID=5,Fotografia="Bmw_335i_3",Marca="BMW",Modelo="335i",NumeroSeq="3"},
+                          new Imagens {ID=1,Fotografia="Mazda_Rx7_1.jpg",Marca="Mazda",Modelo="Rx7",NumeroSeq="1", Viatura=viaturas[1]},
+                          new Imagens {ID=2,Fotografia="Mazda_Rx7_2",Marca="Mazda",Modelo="Rx7",NumeroSeq="2", Viatura=viaturas[1]},
+                          new Imagens {ID=3,Fotografia="Bmw_335i_1",Marca="BMW",Modelo="335i",NumeroSeq="1", Viatura=viaturas[6]},
+                          new Imagens {ID=4,Fotografia="Bmw_335i_2",Marca="BMW",Modelo="335i",NumeroSeq="2", Viatura=viaturas[6]},
+                          new Imagens {ID=5,Fotografia="Bmw_335i_3",Marca="BMW",Modelo="335i",NumeroSeq="3", Viatura=viaturas[6]},
                           new Imagens {ID=6,Fotografia="Toyota_Supra_1",Marca="Toyota",Modelo="Supra",NumeroSeq="1"},
                           new Imagens {ID=7,Fotografia="Toyota_Supra_2",Marca="Toyota",Modelo="Supra",NumeroSeq="2"},
                           new Imagens {ID=8,Fotografia="Toyota_Supra_3",Marca="Toyota",Modelo="Supra",NumeroSeq="3"},

@@ -192,12 +192,24 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RolesAdminController.cs" />
+    <Compile Include="Controllers\StandsController.cs" />
+    <Compile Include="Controllers\UserAdminController.cs" />
+    <Compile Include="Controllers\ViaturasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Compras.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Imagens.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Stands.cs" />
+    <Compile Include="Models\Viaturas.cs" />
+    <Compile Include="Models\ViaturasStands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -206,6 +218,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fotos\fundo.jpg" />
+    <Content Include="fotos\Toyota_Supra_1.jpg" />
+    <Content Include="fotos\Toyota_Supra_2 .jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -258,6 +273,27 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\DisplayEmail.cshtml" />
+    <Content Include="Views\RolesAdmin\Create.cshtml" />
+    <Content Include="Views\RolesAdmin\Delete.cshtml" />
+    <Content Include="Views\RolesAdmin\Details.cshtml" />
+    <Content Include="Views\RolesAdmin\Edit.cshtml" />
+    <Content Include="Views\RolesAdmin\Index.cshtml" />
+    <Content Include="Views\Stands\Create.cshtml" />
+    <Content Include="Views\Stands\Delete.cshtml" />
+    <Content Include="Views\Stands\Details.cshtml" />
+    <Content Include="Views\Stands\Edit.cshtml" />
+    <Content Include="Views\Stands\Index.cshtml" />
+    <Content Include="Views\UsersAdmin\Create.cshtml" />
+    <Content Include="Views\UsersAdmin\Delete.cshtml" />
+    <Content Include="Views\UsersAdmin\Details.cshtml" />
+    <Content Include="Views\UsersAdmin\Edit.cshtml" />
+    <Content Include="Views\UsersAdmin\Index.cshtml" />
+    <Content Include="Views\Viaturas\Create.cshtml" />
+    <Content Include="Views\Viaturas\Delete.cshtml" />
+    <Content Include="Views\Viaturas\Details.cshtml" />
+    <Content Include="Views\Viaturas\Edit.cshtml" />
+    <Content Include="Views\Viaturas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

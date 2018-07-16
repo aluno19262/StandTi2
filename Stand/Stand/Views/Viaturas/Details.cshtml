@@ -1,0 +1,112 @@
+﻿@model Stand.Models.Viaturas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Viaturas</h4>
+    <hr />
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.Compra.NomeStand)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Compra.NomeStand)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Matricula)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Matricula)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Marca)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Marca)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Modelo)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Modelo)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Ano)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Ano)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.TipoCombustivel)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.TipoCombustivel)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Cor)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Cor)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Cilindrada)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Cilindrada)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Potencia)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Potencia)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Lugares)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Lugares)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Tipo)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Tipo)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.Imagens)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Imagens)
+		</dd>
+	</dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Stand.Models.Viaturas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.Compra.NomeStand)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Matricula)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Marca)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Modelo)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Ano)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.TipoCombustivel)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Cor)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Cilindrada)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Potencia)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Lugares)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Tipo)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Imagens)
+		</th>
+		<th></th>
+	</tr>
+
+@foreach (var item in Model) {
+	<tr>
+		<td>
+			@Html.DisplayFor(modelItem => item.Compra.NomeStand)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Matricula)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Marca)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Modelo)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Ano)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.TipoCombustivel)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Cor)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Cilindrada)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Potencia)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Lugares)
+		</td>
+		<td>
+			@Html.DisplayFor(modelItem => item.Tipo)
+		</td>
+
+		<td>
+			<a href="~/fotos/" target="_blank">
+				<img src="~/fotos/" width="50" height="37" />
+</td>
+		<td>
+			@Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+			@Html.ActionLink("Detalhes", "Details", new { id = item.ID }) |
+			@Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+		</td>
+	</tr>
+}
+
+</table>

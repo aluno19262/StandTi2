@@ -92,11 +92,23 @@
 				</a>
 </td>
 		<td>
+			@if (User.IsInRole("Administrador")){
+		<text>
 			@Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
 			@Html.ActionLink("Detalhes", "Details", new { id = item.ID }) |
-			@Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+			@Html.ActionLink("Apagar", "Delete", new { id = item.ID })
+		</text>
+			}
+			else{
+				if (User.IsInRole("Cliente")){
+				<text>
+					@Html.ActionLink("Editar", "Edit", new { id = item.ID }) |
+					@Html.ActionLink("Detalhes", "Details", new { id = item.ID })
+				</text>
+					}
+				}
 		</td>
 	</tr>
-}
+	}
 
 </table>

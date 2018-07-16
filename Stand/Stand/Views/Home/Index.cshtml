@@ -2,18 +2,90 @@
 	ViewBag.Title = "Stand";
 }
 
-<div>
-	
-			foreach (var imagem in Model.Imagens)
-			{
-				<div>
-					<a href="~/fotos/@imagem.Fotografia">
-						<img src="~/fotos/@imagem.Fotografia" />
-					</a>
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home - Brand</title>
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+	</head>
+<body >
+	<main class="page lanidng-page" style="padding-top:16px;">
+		<section class="portfolio-block block-intro" style="padding-bottom:32px;padding-top:32px;">
+			<div class="container">
+				<div class="col-sm-4 col-lg-4 col-md-4">
+
+					<div class="row">
+						<div class="thumbnail">
+							<img src="~/fotos-Principais/Bmw_335i_1.jpg" width="300" height="300">
+							<div class="caption">
+								<h4 class="pull-right"></h4>
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p>Marca:BMW</p>
+								<p>Modelo:335i</p>
+								<p>Ano:2017</p>
+								<p>Combustivel:Gasolina</p>
+								<p>preço:20000 euros</p>
+							</div>
+						</div>
+					</div>					
+						<div class="thumbnail">
+							<img src="~/fotos-Principais/Mazda_Rx7_1.jpg" width="300" height="300">
+							<div class="caption">
+								<h4 class="pull-left"></h4>
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p>Marca:Mazda</p>
+								<p>Modelo:Rx7</p>
+								<p>Ano:1997</p>
+								<p>Combustivel:Gasolina</p>
+								<p>preço:12000 euros</p>
+
+							</div>
+						</div>					
+						<div class="thumbnail">
+							<img src="~/fotos-Principais/Opel_Astra_1.jpg" width="300" height="300">
+							<div class="caption">
+								<h4 class="pull-right"></h4>
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p>Marca:Opel</p>
+								<p>Modelo:Astra</p>
+								<p>Ano:2011</p>
+								<p>Combustivel:Gasolina</p>
+								<p>preço:15000 euros</p>
+
+							</div>
+						</div>					
+						<div class="thumbnail">
+							<img src="~/fotos-Principais/Toyota_Supra_1.jpg" width="300" height="300">
+							<div class="caption">
+								<h4 class="pull-left"></h4>
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p>Marca:Toyota</p>
+								<p>Modelo:Supra</p>
+								<p>Ano:1993</p>
+								<p>Combustivel:Gasolina</p>
+								<p>preço:10000 euros</p>
+
+							</div>
+						</div>			
 				</div>
-	
-			}
-		}
-	
-</div>
+				</div>			
+</section>
+		
+	</main>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/theme.js"></script>
+	</body>
+		</html>
 

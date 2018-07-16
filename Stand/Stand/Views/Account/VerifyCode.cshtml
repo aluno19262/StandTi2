@@ -1,15 +1,15 @@
 ﻿@model Stand.Models.VerifyCodeViewModel
 @{
-    ViewBag.Title = "Enter Verification Code";
+    ViewBag.Title = "Inserir codigo de confirmação";
 }
 
 <h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("VerifyCode", "Account", new { ReturnUrl = Model.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" })) {
+@using (Html.BeginForm("COnfirmar codigo", "Account", new { ReturnUrl = Model.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" })) {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary("", new { @class = "text-danger" })
-    @Html.Hidden("provider", @Model.Provider)
-    @Html.Hidden("rememberMe", @Model.RememberMe)
+    @Html.Hidden("Proprietario", @Model.Provider)
+    @Html.Hidden("Lembrar", @Model.RememberMe)
     <h4>@ViewBag.Status</h4>
     <hr />
     <div class="form-group">

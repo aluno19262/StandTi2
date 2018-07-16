@@ -1,7 +1,7 @@
 ﻿@model Stand.Models.Viaturas
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Criar";
 }
 
 <h2>Criar</h2>
@@ -98,7 +98,7 @@
 	<div class="form-group">
 		@Html.LabelFor(model => model.Imagens, htmlAttributes: new { @class = "control-label col-md-2" })
 		<div class="col-md-10">
-			@*@Html.EditorFor(model => model.Imagens, new { htmlAttributes = new { @class = "form-control" } })*@
+)*@
 			<input type="file" name="uploadFotografia" style="color:blue;" accept=".jpg" />
 			@Html.ValidationMessageFor(model => model.Imagens, "", new { @class = "text-danger" })
 		</div>

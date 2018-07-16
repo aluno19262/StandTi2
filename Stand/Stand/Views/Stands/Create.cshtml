@@ -1,12 +1,12 @@
 ﻿@model Stand.Models.Stands
 
 @{
-	ViewBag.Title = "Create";
+	ViewBag.Title = "Criar";
 }
 
-<h2>Create</h2>
+<h2>Criar</h2>
 
-@using (Html.BeginForm("Create",
+@using (Html.BeginForm("Criar",
 					   "Stands",
 					   FormMethod.Post,
 					   new { enctype = "multipart/form-data" }))
@@ -74,7 +74,7 @@
 }
 
 <div>
-	@Html.ActionLink("Back to List", "Index")
+	@Html.ActionLink("Voltar", "Index")
 </div>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>

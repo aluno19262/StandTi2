@@ -1,13 +1,13 @@
 ﻿@model Stand.Models.ApplicationUser
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalhes";
 }
 
-<h2>Details.</h2>
+<h2>Detalhes.</h2>
 
 <div>
-    <h4>User</h4>
+    <h4>Utilizador</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -22,7 +22,7 @@
 @if (ViewBag.RoleNames.Count == 0)
 {
     <hr />
-    <p>No roles found for this user.</p>
+    <p>nao foram encontradas roles para este utilizador</p>
 }
 
 <table class="table">
@@ -37,8 +37,8 @@
     }
 </table>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
 </p>
 
 

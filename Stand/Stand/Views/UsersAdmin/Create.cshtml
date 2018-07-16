@@ -1,14 +1,14 @@
 ﻿@model Stand.Models.RegisterViewModel
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Criar";
 }
 
 <h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("Create", "UsersAdmin", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("Criar", "UsersAdmin", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
+    <h4>Criar uma nova conta</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-error" })
     <div class="form-group">
@@ -31,7 +31,7 @@
     </div>
     <div class="form-group">
         <label class="col-md-2 control-label">
-            Select User Role
+            Selecionar a role do Utilizador
         </label>
         <div class="col-md-10">
             @foreach (var item in (SelectList)ViewBag.RoleId)

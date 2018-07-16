@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Stand.Models.Viaturas>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Viaturas";
 }
 
-<h2>Index</h2>
+<h2>Viaturas</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Criar nova Viatura", "Create")
 </p>
 <table class="table">
 	<tr>
@@ -89,6 +89,7 @@
 		<td>
 			<a href="~/fotos/" target="_blank">
 				<img src="~/fotos/" width="50" height="37" />
+				</a>
 </td>
 		<td>
 			@Html.ActionLink("Editar", "Edit", new { id = item.ID }) |

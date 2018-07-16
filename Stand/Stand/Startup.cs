@@ -27,30 +27,48 @@ namespace Stand
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(db));
             var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
 
-            // criar a Role 'Agente'
-            if (!roleManager.RoleExists("Clientes"))
+            // criar a Role 'Cliente'
+            if (!roleManager.RoleExists("Cliente"))
             {
                 // não existe a 'role'
                 // então, criar essa role
                 var role = new IdentityRole();
-                role.Name = "Clientes";
+                role.Name = "Cliente";
+                roleManager.Create(role);
+            }
+
+            if (!roleManager.RoleExists("Administrador"))
+            {
+
+                var role = new IdentityRole();
+                role.Name = "Administrador";
                 roleManager.Create(role);
             }
 
 
-
             // criar um utilizador 'Agente'
             var user = new ApplicationUser();
-            user.UserName = "teste@mail.pt";
-            user.Email = "agente@mail.pt";
-            //user.Nome = "Luís Freitas";
+            user.UserName = "user1@hotmail.com";
+            user.Email = "user1@hotmail.com";
             string userPWD = "123_Asd";
             var chkUser = userManager.Create(user, userPWD);
 
             //Adicionar o Utilizador à respetiva Role-Agente-
             if (chkUser.Succeeded)
             {
-                var result1 = userManager.AddToRole(user.Id, "Clientes");
+                var result1 = userManager.AddToRole(user.Id, "Cliente");
+            }
+
+             user = new ApplicationUser();
+            user.UserName = "user2@hotmail.com";
+            user.Email = "user2@hotmail.com";
+            userPWD = "123_Asd";
+            chkUser = userManager.Create(user, userPWD);
+
+            //Adicionar o Utilizador à respetiva Role-Agente-
+            if (chkUser.Succeeded)
+            {
+                var result1 = userManager.AddToRole(user.Id, "Administrador");
             }
         }
 

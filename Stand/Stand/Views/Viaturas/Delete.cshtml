@@ -1,7 +1,7 @@
 ﻿@model Stand.Models.Viaturas
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Eliminar";
 }
 
 <h2>Eliminar</h2>
@@ -101,9 +101,15 @@
 		<dt>
 			@Html.DisplayNameFor(model => model.Imagens)
 		</dt>
-
 		<dd>
-			@Html.DisplayFor(model => model.Imagens)
+			@{ if (Model.Imagens != null)
+			{
+				foreach (var imagem in Model.Imagens)
+				{
+					<img src="~/fotos/@imagem.Fotografia" />
+			}
+		}
+			}
 		</dd>
 
 	</dl>
